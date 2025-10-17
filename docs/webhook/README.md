@@ -35,12 +35,12 @@ You can verify the integration is working by waiting for a new IoT in a Box even
 You can also use a temporary service, such as [RequestBin](https://requestvin.herokuapp.com/) to get a sense of how things work before integrating payload events into your service.
 
 ### JSON Schema
-- [Uplink JSON Schema](https://github.com/myDevicesIoT/integrations-docs/blob/master/docs/webhook/schema/uplink-schema.json)
-- [Alert JSON Schema](https://github.com/myDevicesIoT/integrations-docs/blob/master/docs/webhook/schema/alert-schema.json)
+- [Uplink JSON Schema](https://github.com/CognituvTeam/CC-integrations-docs/blob/master/docs/webhook/schema/uplink-schema.json)
+- [Alert JSON Schema](https://github.com/CognituvTeam/CC-integrations-docs/blob/master/docs/webhook/schema/alert-schema.json)
 
 ### Example Payloads
 
  #### Uplink Event:
-  - [Netvox Wireless Temp/Humidity](https://github.com/myDevicesIoT/integrations-docs/blob/master/docs/webhook/uplink-sample.json)
+  - [Netvox Wireless Temp/Humidity](https://github.com/CognituvTeam/CC-integrations-docs/blob/master/docs/webhook/uplink-sample.json)
  #### Alert Event:
-  - [Netvox Leak](https://github.com/myDevicesIoT/integrations-docs/blob/master/docs/webhook/alert-sample.json)
+  - [Netvox Leak](https://github.com/CognituvTeam/CC-integrations-docs/blob/master/docs/webhook/alert-sample.json)
