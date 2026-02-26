@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  cognituv-connect-mcp:
+    build: .
+    container_name: cognituv-connect-mcp
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/data
+    environment:
+      - COGNITUV_DB_FILE=/data/cognituv_connect.db
+      - COGNITUV_WEBHOOK_SECRET=${COGNITUV_WEBHOOK_SECRET:-}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
